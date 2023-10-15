@@ -1,0 +1,178 @@
+
+
+body {
+        
+}
+
+/* background colour working only with  !important */
+.bg-body{
+        background-color: #FEFAE0!important;
+      
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+        font-family: 'Playfair Display', serif!important;
+        color: #BC6C25;
+        margin-top:3%;
+        margin-bottom:3%;
+
+}
+
+p {
+        font-family: 'Lato', sans-serif!important;
+        color: #606C38 ;
+        margin-top: 3%;
+        margin-bottom:4%;
+        
+}
+
+                /* HEADER  */
+/* Navigation hover isn't done yet  */
+
+.box {
+        position:relative;
+      }
+
+/*  margin-top set to -%; so Nav bar would sit on the image properly */
+a.navbar-brand {
+        color: #BC6C25 ;
+        font-family: 'Playfair Display', serif;
+}
+
+
+.img-fluid {
+        margin-top: -15%
+}       
+
+.img-title {
+        position: absolute;
+        font-family: 'Playfair Display', serif!important;
+        color: #606C38!important;
+        font-size: 35px!important;
+        text-align: center;
+        left: 45%;
+        right: 5%;
+        top: 28%;
+        /* letter-spacing: 3px; */
+      }
+
+
+      /* Hero img text Responsive for the mobile  */
+@media screen and (max-width: 480px) {
+        .img-title  {
+          font-size: 15px!important;
+        }     
+}
+
+@media screen and (max-width: 280px) {
+        .img-title  {
+          font-size: 15px!important;
+          left: 45%;
+          right: 5%;
+          top: 10%;
+        }     
+}
+
+.nav-link {
+        color: #606C38!important;
+}
+
+/* right align nav bar items */
+.navbar-collapse {
+        display: flex;
+        text-align: right!important;
+}
+
+        /* SERVICES */
+
+.service-img{
+        margin-top: 2%;
+        margin-bottom: 2%;
+}
+
+div.container {
+        margin-top: 3%;
+
+}
+
+        /* TESTIMONIALS */
+
+.testimonials{
+        background-color: #606C38;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+}
+
+.carousel-item {
+        margin-bottom: 3%;
+}
+
+/* find another solutions to have  text colour aplies in one section */
+.testimonials p {
+        color:  #FEFAE0;
+}
+
+.testimonials h1 {
+        color:  #FEFAE0;
+}
+
+.testimonials h6 {
+        color:  #FEFAE0;
+}
+
+
+        /* FOOTER  */
+/* Revisit padding for the link (message us) */
+.address a {
+        text-decoration: none;
+        color: #BC6C25;
+}
+
+/* Footer not responsive on smaller devices need to be aligned more; "message us" to put a bit lower; 
+social icons position a bit higher than address text, to align  with the addresses;
+  */
+.footer {
+        width: 100%;
+        padding: 20px 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .footer p {
+        font-size: 13px;
+        margin: 20px 20px;
+    }
+
+    .footer ul {
+        list-style: none;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        text-align: right;
+        float: right;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .footer-social li {
+        align-items:center;
+        cursor: pointer;
+    }
+
+    .footer-social li img {
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        object-fit: contain;
+    }
+
+    .fa {
+        color:#606C38;
+        text-decoration: none;
+    }
+

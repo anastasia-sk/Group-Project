@@ -123,6 +123,75 @@ div.container {
         color:  #FEFAE0;
 }
 
+        /* CONTACT US */
+body{
+  background:#FEFAE0;
+  margin:0
+}
+.form{
+  width:800px;
+  height:440px;
+  background:#FEFAE0;
+  border-radius:8px;
+  box-shadow:0 #606C38;
+  margin:50px;
+  padding:20px 30px;
+  max-width:calc(100vw - 50px);
+  box-sizing:border-box;
+  font-family: 'Lato', sans-serif;
+  position:relative;
+  
+}
+h2{
+  margin:10px 0;
+  font-family: 'Playfair Display';
+  padding-bottom:10px;
+  width:200px;
+  color:#606C38;
+  border-bottom:2px solid #606C38;
+    
+}
+input{
+  width:100%;
+  padding:20px;
+  box-sizing:border-box;
+  border-radius:0px;
+  background:#FEFAE0;
+  opacity:0.5;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family: 'Lato', sans-serif;
+  border-bottom:2px solid #606C38;
+}
+
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#606C38
+}
+button{
+  float:right;
+  border-radius:0px;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family: 'Lato', sans-serif;
+  border:2px solid #606C38;
+  color: #FEFAE0;
+  background:#606C38;
+  cursor:pointer;
+  transition:all .3s}
+
+button:hover{
+  background:#BC6C25;
+  border:2px solid #BC6C25;
+}
+
+span{
+  margin:0 5px 0 15px
+}
 
         /* FOOTER  */
 /* Revisit padding for the link (message us) */

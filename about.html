@@ -32,55 +32,152 @@
 
 <body>
 
-    <header>
-        <img class="background-img" src="" alt="">
-
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img class="logo" src="" alt="">
-            </a>
-
-            <ul class="nav-links">
-                <li class="nav-item"> <a href="index.html"> Home </a> </li>
-                <li class="nav-item"> <a href="about.html"> About </a> </li>
-                <li class="nav-item"> <a href="contact.html"> Contact us </a> </li>
-            </ul>
-        </nav>
-
-        <div>
-            <h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi ipsum quia sunt recusandae dolorem
-                repellendus
-                rem maiores asperiores fugiat eligendi rerum earum quam, in, quod minima! Perferendis, voluptas
-                mollitia!
-            </h1>
+    <header class="d-flex flex-column-reverse">
+        <!-- Banner image working with text -->
+        <div class="box">
+            <img src="./images/Cover-About.png" class="img img-fluid" alt="green leave in vase">
+            <div class="">
+                <p class="img-title2"> Web development company that celebrates and empowers junior women
+                    coders
+                </p>
+            </div>
         </div>
 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> Start Code Lab </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" area-current="page" href="index.html"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"> About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> Contact us </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <section class="bios">
 
+            <div class="containeraboutus text-center">
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="profile1" src="./images/Founder2.png" width="100%" alt="">
+                    </div>
+                    <div class="col-sm align-self-center">
+                        <h3>Anastasiya Sk</h3>
+                        <p>Diverse Expertise
+
+                            Anastasiya is a multi-talented entrepreneur with a diverse background in fashion, film, and
+                            coding. Anna's journey began
+                            in the fashion industry, where she gained experience in design and marketing. Later, she
+                            transitioned into the film
+                            industry, where she worked as a producer and director. These varied experiences have given
+                            her a unique perspective on
+                            creativity, technology, and storytelling.
+
+                            Anastasiya's vision for Start Code Lab is to create a dynamic and inclusive platform where
+                            individuals from different
+                            backgrounds can learn and collaborate. Anastasiya is passionate about empowering aspiring
+                            developers, especially women,
+                            to excel in the tech industry by combining the artistry of film and fashion with the
+                            precision of coding.
+
+                        </p>
+                        <button2>Learn More..</button2>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm order-md-1 align-self-center">
+                        <h3>Stephanie Nicholson </h3>
+                        <p>
+                            Visionary Trailblazer: Stephanie brings a wealth of experience as a former Results-Driven
+                            Operations Manager in various industries. She holds a Bachelor's degree in Business
+                            Management and has a proven track record of optimising
+                            processes, enhancing efficiency, and driving organisational growth.
+
+                            Stephanie's desire to create meaningful change led her to transition from the corporate
+                            world to entrepreneurship.
+
+                            Vision: Stephanie's vision for her entrepreneurial journey is to establish a company that
+                            specialises in providing
+                            cutting-edge solutions for businesses seeking operational excellence. Her mission is to help
+                            organisations of all sizes
+                            and industries unlock their full potential by implementing data-driven strategies and
+                            process enhancements.
+
+                        </p>
+                        <button2>Learn More..</button2>
+                    </div>
+                    <div class="col-sm order-md-1">
+
+                        <img class="profile1" src="./images/Founder1.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="profile1" src="./images/Founder3.png" width="100%" alt="">
+                    </div>
+                    <div class="col-sm align-self-center">
+                        <h3>Anu Limbu </h3>
+                        <p>Stephanie brings a wealth of experience as a former Results-Driven Operations Manager in
+                            various industries. She holds a
+                            Bachelor's degree in Business Management and has a proven track record of optimising
+                            processes, enhancing efficiency,
+                            and driving organisational growth.
+
+                            Stephanie's desire to create meaningful change led her to transition from the corporate
+                            world to entrepreneurship. She
+                            recognised the need for innovative solutions to address challenges in various industries and
+                            sought to build a company
+                            that could drive positive change.
+
+                            Vision: Stephanie's vision for her entrepreneurial journey is to establish a company that
+                            specialises in providing
+                            cutting-edge solutions for businesses seeking operational excellence. Her mission is to help
+                            organisations of all sizes
+                            and industries unlock their full potential by implementing data-driven strategies and
+                            process enhancements.
+
+                        </p>
+                        <button2>Learn More..</button2>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </main>
 
-    <footer class="footer-social">
-
-        <div>
-            <p> 34 Bull house <br> NW1 2GF <br> London </p>
-
-            <a href="contact.html" class="link"> Message us
-            </a>
-
+    <footer class="footer d-inline-flex justify-content-between">
+        <div class="address">
+            <p> 34 Bull house <br> NW1 2GF <br> London <br>
+                <a href="contact.html" class="link"> Message us </a>
+            </p>
         </div>
 
-        <nav class="social">
-            <ul class="social-links">
-                <li> <a href="#" class="fa fa-facebook"></a></li>
-                <li> <a href="#" class="fa fa-snapchat-ghost"></a></li>
-                <li> <a href="#" class="fa fa-instagram"></a></li>
-                <li> <a href="#" class="fa fa-github"></a> </li>
+        <div class="social-icons">
+            <ul class="footer-social">
+                <li class="flex-center"> <a href="#" class="fa fa-facebook fa-2x"></a></li>
+                <li class="flex-center"> <a href="#" class="fa fa-snapchat-ghost fa-2x"></a></li>
+                <li class="flex-center"> <a href="#" class="fa fa-instagram fa-2x"></a></li>
+                <li class="flex-center"> <a href="#" class="fa fa-github fa-2x"></a> </li>
             </ul>
-            <p class="copyright"> Start Code Lab &copy </p>
-        </nav>
+        </div>
+        <p class="copyright"> Start Code Lab &copy </p>
     </footer>
 
 

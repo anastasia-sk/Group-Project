@@ -4,6 +4,7 @@ body {
         
 }
 
+
 /* background colour working only with  !important */
 .bg-body{
         background-color: #FEFAE0!important;
@@ -11,20 +12,29 @@ body {
 
 }
 
-h1,h2,h3,h4,h5,h6 {
+.row h1 {
+        font-family: 'Playfair Display', serif!important;
+        color: #BC6C25;
+        margin-top:15%;
+        margin-bottom:1%;
+        font-size: 30px ;
+}
+
+h2,h3,h4,h5,h6 {
         font-family: 'Playfair Display', serif!important;
         color: #BC6C25;
         margin-top:3%;
         margin-bottom:3%;
+        font-size: 20px ;
 
 }
 
-p {
+.row p {
         font-family: 'Lato', sans-serif!important;
         color: #606C38 ;
         margin-top: 3%;
-        margin-bottom:4%;
-        
+        margin-bottom:40%;
+        font-size: 15px;     
 }
 
                 /* HEADER  */
@@ -76,6 +86,7 @@ a.navbar-brand {
 
 .nav-link {
         color: #606C38!important;
+        font-size: 15px;
 }
 
 /* right align nav bar items */
@@ -84,11 +95,52 @@ a.navbar-brand {
         text-align: right!important;
 }
 
+        /* cover section */
+.image-container {
+        position: relative;
+        display: inline-block;
+        }
+
+        .image-container img {
+        display: block;
+        width: 100%;
+        height: auto%;
+        }
+
+        .overlay-text {
+        position: absolute;
+        padding: 10px; 
+        top: 35%; 
+        left: 55%; 
+
+        color: #606C38; 
+        font-size: 55px; 
+        text-align: left;
+        font-family: 'Playfair Display', serif!important;
+
+        }
+
+
+        @media screen and (min-width: 601px) {
+        div {
+                font-size: 35px;
+        }
+        }
+        
+
         /* SERVICES */
 
 .service-img{
         margin-top: 2%;
         margin-bottom: 2%;
+}
+
+.services h1 {
+        font-family: 'Playfair Display', serif!important;
+        color: #BC6C25;
+        margin-top:10%;
+        margin-bottom:1%;
+        font-size: 30px ;
 }
 
 div.container {
@@ -105,9 +157,20 @@ div.container {
         padding-top: 2%;
         padding-bottom: 2%;
 }
+.testimonials h1 {
+        font-family: 'Playfair Display', serif!important;
+        color: #BC6C25;
+        margin-top:3%;
+        margin-bottom:1%;
+        font-size: 30px ;
+}
 
 .carousel-item {
         margin-bottom: 3%;
+        font-family: 'Lato', sans-serif!important;
+        color: #606C38 ;
+        margin-bottom:3%;
+        font-size: 15px;
 }
 
 /* find another solutions to have  text colour aplies in one section */

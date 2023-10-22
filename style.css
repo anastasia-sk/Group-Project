@@ -283,3 +283,36 @@ social icons position a bit higher than address text, to align  with the address
         color: #606C38;
         text-decoration: none;
 }
+
+/* testing Anu header
+  */
+.image-container {
+        position: relative;
+        display: inline-block;
+}
+
+.image-container img {
+        display: block;
+        width: 100%;
+        height: auto%;
+}
+
+.overlay-text {
+        position: absolute;
+        padding: 10px;
+        top: 35%;
+        right: 55%;
+
+        color: #606C38;
+        font-size: 55px;
+        text-align: left;
+        font-family: 'Playfair Display', serif !important;
+
+}
+
+
+@media screen and (min-width: 601px) {
+        div {
+                font-size: 35px;
+        }
+}

@@ -1,3 +1,10 @@
+
+/* added the margin 0px to override user agent stylesheet, the white frame around the img */
+
+body{
+  margin: 0px;
+}
+
 .image-container {
     position: relative;
     display: inline-block;

@@ -65,7 +65,7 @@ a.navbar-brand {
         font-size: 35px !important;
         text-align: left;
         left: 5%;
-        right: 45%;
+        right: 56%;
         top: 20%;
         /* letter-spacing: 3px; */
 }
@@ -79,6 +79,9 @@ a.navbar-brand {
         .img-title {
                 font-size: 15px !important;
         }
+        .img-title2 {
+                font-size: 15px !important;
+        }
 }
 
 @media screen and (max-width: 280px) {
@@ -87,6 +90,10 @@ a.navbar-brand {
                 left: 45%;
                 right: 5%;
                 top: 10%;
+        }
+        .img-title2 {
+                font-size: 15px !important;
+
         }
 }
 
@@ -99,6 +106,11 @@ a.navbar-brand {
         display: flex;
         text-align: right !important;
 }
+
+
+
+
+
 
 /* SERVICES */
 

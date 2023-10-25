@@ -1,11 +1,7 @@
-body {}
-
-/* background colour working only with  !important */
-.bg-body {
-        background-color: #FEFAE0 !important;
-
-
+body {
+        background-color: #FEFAE0 !important;     
 }
+
 
 h1,
 h2,
@@ -28,33 +24,67 @@ p {
 
 }
 
-/* HEADER  */
-/* Navigation hover isn't done yet  */
+/*  NAV BAR */
 
-.box {
+/* text style for the nav bar(hover) */
+.w3-hover-theme:hover {
+        color:#bc6c25!important; 
+        background-color:#bc6c25 !important;
+}
+
+.w3-hover-text-theme:hover {
+        color:#bc6c25 !important;
+}
+
+.w3-hover-border-theme:hover {
+        border-color:#bc6c25 !important;
+}
+
+.w3-border-bottom {
+        border-bottom: 2px solid  #FEFAE0 !important;
+}
+
+
+.w3-bar-item{
+        font-family: 'Playfair Display', serif !important;
+        color: #606C38!important;
+        font-size: 16px;
+        font-weight: bold;
+}
+
+
+.logo{
+        color:#bc6c25!important;
+        font-size: 20px;
+
+}
+
+
+     /* cover  image section */
+      .image-container {
         position: relative;
-}
+        display: inline-block;
+        }
 
-/*  margin-top set to -%; so Nav bar would sit on the image properly */
-a.navbar-brand {
-        color: #BC6C25;
-        font-family: 'Playfair Display', serif;
-}
+         .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
 
 
-.img-fluid {
-        margin-top: -15%
-}
+/* HEADER  */
 
 .img-title {
         position: absolute;
         font-family: 'Playfair Display', serif !important;
+        font-size: 3.5vw;
         color: #606C38 !important;
-        font-size: 35px !important;
+        /* font-size: 35px !important; */
         text-align: center;
         left: 45%;
         right: 5%;
-        top: 28%;
+        top: 26%;
         /* letter-spacing: 3px; */
 }
 
@@ -72,47 +102,190 @@ a.navbar-brand {
 
 
 
+/* Cover img text Responsive  */
 
 
-/* Hero img text Responsive for the mobile  */
-@media screen and (max-width: 480px) {
+@media screen (max-device-width: 600px) {
         .img-title {
-                font-size: 15px !important;
+                font-size: 18px !important;
+                left: 45%;
+                right: 5%;
+                top: 9%;
         }
         .img-title2 {
                 font-size: 15px !important;
+
         }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (min-device-width: 460px) and (max-device-width: 500px) {
+        .img-title {
+                font-size: 16px !important;
+                left: 45%;
+                right: 5%;
+                top: 13%;
+        }
+        .img-title2 {
+                font-size: 15px !important;
+
+        }
+}
+
+
+
+@media screen and (min-device-width: 370px) and (max-device-width: 460px) {
         .img-title {
                 font-size: 15px !important;
                 left: 45%;
                 right: 5%;
                 top: 10%;
         }
+
         .img-title2 {
                 font-size: 15px !important;
 
         }
 }
 
-.nav-link {
-        color: #606C38 !important;
+
+@media screen and (min-device-width: 300px) and (max-device-width: 370px) {
+        .img-title {
+                font-size: 12px !important;
+                left: 48%;
+                right: 5%;
+                top: 10%;
+        }
+
+        .img-title2 {
+                font-size: 15px !important;
+        }
 }
 
-/* right align nav bar items */
-.navbar-collapse {
+
+/* The smallest size  */
+@media screen and (min-device-width: 250px) and (max-device-width: 300px) {
+        .img-title {
+                font-size: 10px !important;
+                left: 47%;
+                right: 5%;
+                top: 25%;
+        }
+
+        .img-title2 {
+                font-size: 15px !important;
+        }
+}
+
+
+
+/* Responsive text size of the NAV BAR  */
+
+@media screen and (min-device-width: 450px) and (max-device-width: 550px) {
+
+        .w3-bar .w3-bar-item {
+                padding: 8px 9px;
+                font-size: 13px;
+        }
+}
+
+@media screen and (min-device-width: 250px) and (max-device-width: 450px) {
+
+        .w3-bar .w3-bar-item {
+                padding: 8px 8px;
+                font-size: 10px;
+        }
+}
+
+
+                /* FOOTER  */
+
+/* Footer not responsive on smaller devices need to be aligned more; */
+.footer {
+        width: 100%;
+        padding: 8px 8px;
+        flex-wrap: wrap;
+        gap: 5px;
+        overflow: hidden;
+}
+
+.footer p {
+        font-size: 13px;
+        margin: 10px 10px;
+}
+
+
+.footer ul {
+        list-style: none;
         display: flex;
-        text-align: right !important;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        text-align: right;
+        float: right;
+        margin: 20px;
+        padding-top: 20%;
+        align-items: center;
+}
+
+.footer-social li {
+        align-items: center;
+        cursor: pointer;
+}
+
+.footer-social li img {
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        object-fit: contain;
+}
+
+.fa {
+        color: #606C38;
+        text-decoration: none;
+}
+.fa:hover {
+        color: #BC6C25;
+      }
+
+.link{
+        text-decoration: none;
+        color: #BC6C25;
+}
+
+.link:hover{
+        color: #606C38;
+
+}
+
+
+.copyright {
+        padding-top: 7%;        
+
+}
+
+@media screen  and (min-device-width: 461px) and (max-device-width: 530px)   {
+        p.copyright{
+                padding-top: 14%;         
+        }       
+}
+
+@media screen  and (min-device-width: 530px) and (max-device-width: 725px)   {
+        p.copyright{
+                padding-top: 10%;         
+        }       
+}
+
+@media screen  and (min-device-width: 725px) and (max-device-width: 900px)   {
+        p.copyright{
+                padding-top: 9%;         
+        }       
 }
 
 
 
+                /* HOME PAGE */
 
-
-
-/* SERVICES */
+/* SERVICES section */
 
 .service-img {
         margin-top: 2%;
@@ -121,10 +294,16 @@ a.navbar-brand {
 
 div.container {
         margin-top: 3%;
-
 }
 
-/* TESTIMONIALS */
+/* hover on the service list */
+.service.w3-hover-text-theme:hover {
+        color: #606C38 !important;
+}
+
+
+
+                /* TESTIMONIALS  section */
 
 .testimonials {
         background-color: #606C38;
@@ -151,11 +330,20 @@ div.container {
         color: #FEFAE0;
 }
 
-/* CONTACT US */
-body {
-        background: #FEFAE0;
-        margin: 0
+/* Testimonials arrows not overlapping and responsive  */
+@media screen and (min-device-width: 250px)  and (max-device-width: 670px)  {
+       .carousel-inner{
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 13px;
+        }
 }
+
+
+
+
+
+                /* CONTACT US  PAGE */
 
 .form {
         width: 800px;
@@ -196,7 +384,7 @@ input {
         border-bottom: 2px solid #606C38;
 }
 
-p:before {
+p.form-input:before {
         content: attr(type);
         display: block;
         margin: 28px 0 0;
@@ -204,7 +392,7 @@ p:before {
         color: #606C38
 }
 
-button {
+button.form-btn {
         float: right;
         border-radius: 0px;
         padding: 8px 12px;
@@ -217,7 +405,7 @@ button {
         transition: all .3s
 }
 
-button:hover {
+button.form-btn:hover {
         background: #BC6C25;
         border: 2px solid #BC6C25;
 }
@@ -241,57 +429,6 @@ button2:hover {
 }
 
 span {
-        margin: 0 5px 0 15px
+        margin: 0 15px 0 15px
 }
 
-/* FOOTER  */
-/* Revisit padding for the link (message us) */
-.address a {
-        text-decoration: none;
-        color: #BC6C25;
-}
-
-/* Footer not responsive on smaller devices need to be aligned more; "message us" to put a bit lower; 
-social icons position a bit higher than address text, to align  with the addresses;
-  */
-.footer {
-        width: 100%;
-        padding: 20px 20px;
-        flex-wrap: wrap;
-        gap: 20px;
-        overflow: hidden;
-}
-
-.footer p {
-        font-size: 13px;
-        margin: 20px 20px;
-}
-
-.footer ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 20px;
-        text-align: right;
-        float: right;
-        margin: 20px;
-        align-items: center;
-}
-
-.footer-social li {
-        align-items: center;
-        cursor: pointer;
-}
-
-.footer-social li img {
-        width: 25px;
-        height: 25px;
-        align-items: center;
-        object-fit: contain;
-}
-
-.fa {
-        color: #606C38;
-        text-decoration: none;
-}

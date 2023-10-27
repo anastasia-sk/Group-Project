@@ -411,7 +411,7 @@ button.form-btn {
         float: right;
         border-radius: 0px;
         padding: 8px 12px;
-        margin: 8px 0 0;
+        margin: 20px 0 0;
         font-family: 'Lato', sans-serif;
         border: 2px solid #606C38;
         color: #FEFAE0;
@@ -423,7 +423,7 @@ button.form-btn {
 /* Buuton responsive */
 @media screen and (min-device-width: 530px) and (max-device-width: 700px)  {
         button.form-btn{
-            margin-top: 18px;    
+            margin-top: 20px;    
          }
  }
 

@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">      
 
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
@@ -32,46 +30,26 @@
 
 <body>
 
-    <header class="d-flex flex-column-reverse">
-        <!-- Banner image working with text -->
-        <div class="box">
-            <img src="./images/Cover-About.png" class="img img-fluid" alt="green leave in vase">
-            <div class="">
-                <p class="img-title2 text-end"> Web development company that celebrates and empowers junior women
-                    coders
-                </p>
-            </div>
-        </div>
+    <header class= "w3-bar" >               
+        <a  class="logo w3-bar-item w3-button w3-hover-none w3-hover-text-theme" href="index.html" >  Start Code Lab </a> 
+            <nav class="w3-right "> 
+                <a class="nav w3-bar-item  w3-button w3-hover-none  w3-border-bottom w3-round-small w3-hover-border-theme w3-hover-text-theme" area-current="page" href="index.html"> Home </a>
+                <a class="nav w3-bar-item  w3-button  w3-hover-none  w3-border-bottom w3-round-small w3-hover-border-theme w3-hover-text-theme" href="about.html"> About </a> 
+                <a class="nav w3-bar-item  w3-button  w3-hover-none  w3-border-bottom w3-round-small w3-hover-border-theme w3-hover-text-theme" href="contact.html"> Contact us </a>                              
+            </nav>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"> Start Code Lab </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" area-current="page" href="index.html"> Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html"> About </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact us </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <div class="image-container">
+                <img class="cover-img" src="images/Cover-About.png" alt="vase with green leafs">
+                    <div class="overlay-text"> 
+                        <p class="img-title2  "> Empowering Women, Coding the Future </p>
+                    </div>
+             </div>
     </header>
 
     <main>
         <section class="bios">
 
-            <div class="containeraboutus text-center">
+            <div class="container-about-us text-center">
                 <div class="row">
                     <div class="col-sm">
                         <img class="profile1" src="./images/Founder2.png" width="100%" alt="">
@@ -81,13 +59,20 @@
                         <p>Diverse Expertise
 
                             Anastasiya is a multi-talented entrepreneur with a diverse background in fashion, film, and
-                            coding. <br> <br> Anastasiya's journey began
-                            in the fashion industry, where she gained experience in design and marketing. Later, she
+                            coding. <br>  <br> 
+                            
+                            Anastasiya's journey began
+                            in the fashion industry, where she gained experience in design and marketing.
+                         </p>       
+                            
+                        <p class="hide-text text"> Later, she
                             transitioned into the film
                             industry, where she worked as a producer and director. These varied experiences have given
                             her a unique perspective on
                             creativity, technology, and storytelling.
-                            <br> <br>
+                         </p>
+
+                        <p class="hide-text text">   
                             Anastasiya's vision for Start Code Lab is to create a dynamic and inclusive platform where
                             individuals from different
                             backgrounds can learn and collaborate. Anastasiya is passionate about empowering aspiring
@@ -96,7 +81,7 @@
                             precision of coding.
 
                         </p>
-                        <button2>Learn More..</button2>
+                        <button>Learn More..</button>
 
                     </div>
                 </div>
@@ -109,14 +94,17 @@
                         <h3>Stephanie Nicholson </h3>
                         <p>
                             Visionary Trailblazer: Stephanie brings a wealth of experience as a former Results-Driven
-                            Operations Manager in various industries. <br> <br>She holds a Bachelor's degree in Business
+                            Operations Manager in various industries. <br> <br> 
+                            
+                            She holds a Bachelor's degree in Business
                             Management and has a proven track record of optimising
                             processes, enhancing efficiency, and driving organisational growth.
+                         </p>   
 
-                            Stephanie's desire to create meaningful change led her to transition from the corporate
-                            world to entrepreneurship.<br> <br>
-
-                            Vision: Stephanie's vision for her entrepreneurial journey is to establish a company that
+                        <p class="hide-text text">  Stephanie's desire to create meaningful change led her to transition from the corporate
+                            world to entrepreneurship.<br> 
+                        
+                         Vision: Stephanie's vision for her entrepreneurial journey is to establish a company that
                             specialises in providing
                             cutting-edge solutions for businesses seeking operational excellence. Her mission is to help
                             organisations of all sizes
@@ -124,7 +112,7 @@
                             process enhancements.
 
                         </p>
-                        <button2>Learn More..</button2>
+                        <button>Learn More..</button>
                     </div>
 
                 </div>
@@ -134,27 +122,30 @@
                     </div>
                     <div class="col-sm align-self-center">
                         <h3>Anu Limbu </h3>
-                        <p>Anu brings a wealth of experience as a former Results-Driven Operations Manager in
-                            various industries. <br> <br> She holds a
-                            Bachelor's degree in Business Management and has a proven track record of optimising
+                        <p class="text"> Anu brings a wealth of experience as a former Results-Driven Operations Manager in
+                            various industries. <br> <br> 
+                            She holds a Bachelor's degree in Business Management and has a proven track record of optimising
                             processes, enhancing efficiency,
                             and driving organisational growth.
+                        </p>   
 
-                            Anu's desire to create meaningful change led her to transition from the corporate
+                        <p class="hide-text text">  Anu's desire to create meaningful change led her to transition from the corporate
                             world to entrepreneurship. She
                             recognised the need for innovative solutions to address challenges in various industries and
                             sought to build a company
-                            that could drive positive change.<br> <br>
+                            that could drive positive change. <br> 
+
+                        </p>
                             
-                            Vision: Anu's vision for her entrepreneurial journey is to establish a company that
+                         <p class="hide-text text"> Vision: Anu's vision for her entrepreneurial journey is to establish a company that
                             specialises in providing
                             cutting-edge solutions for businesses seeking operational excellence. Her mission is to help
                             organisations of all sizes
                             and industries unlock their full potential by implementing data-driven strategies and
                             process enhancements.
-
                         </p>
-                        <button2>Learn More..</button2>
+
+                        <button>Learn More..</button>
                     </div>
                 </div>
 
@@ -183,3 +174,5 @@
 
 
 </body>
+
+</html>
